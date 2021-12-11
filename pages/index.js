@@ -1,8 +1,27 @@
+import { createClient } from 'contentful'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export const getStaticProps = async() => {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+
+  const response = await client.getEntries({
+    content_type: "recipe",
+  });
+
+  return {
+    props: {
+      recipes: response.items
+    }
+  }
+}
+
+export default function Home({ recipes }) {
+  console.log(recipes);
   return (
     <div className={styles.container}>
       <Head>
@@ -19,9 +38,7 @@ export default function Home() {
         
       </main>
 
-      <footer className={styles.footer}>
-        &copy; Copyright 2021 Recipe Den
-      </footer>
+
     </div>
   )
 }
