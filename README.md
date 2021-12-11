@@ -2,6 +2,10 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) that also uses [Contentful](https://www.contentful.com/).
 
+## Styling 
+
+For styling made use of the Styled JSX pattern i.e. using the `<style jsx>{`.....`}</style>` syntax
+
 ## Getting Started
 
 First, run the development server:

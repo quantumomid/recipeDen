@@ -35,11 +35,18 @@ export default function Home({ recipes }) {
         <h3 className={styles.title}>
           Welcome to the Recipe Den!
         </h3>
-        { recipes.map(recipe => <RecipeCard key={recipe.sys.id} recipe={recipe} />) }
-        
+        <div className="recipe-list">
+          { recipes.map(recipe => <RecipeCard key={recipe.sys.id} recipe={recipe} />) }
+        </div>
       </main>
 
-
+      <style jsx>{`
+        .recipe-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 20px 60px;
+        }
+      `}</style>
     </div>
   )
 }
