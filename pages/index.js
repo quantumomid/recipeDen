@@ -16,7 +16,7 @@ export const getStaticProps = async() => {
 
   return {
     props: {
-      recipes: response.items
+      recipes: response.items,
     }
   }
 }

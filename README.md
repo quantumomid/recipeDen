@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Styling 
 
-For styling made use of the Styled JSX pattern i.e. using the `<style jsx>{`.....`}</style>` syntax
+For styling made use of the Styled JSX pattern i.e. using the `<style jsx>{``.....``}</style>` syntax
 
 ## Getting Started
 
