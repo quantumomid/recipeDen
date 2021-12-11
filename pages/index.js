@@ -1,6 +1,7 @@
 import { createClient } from 'contentful'
 import Head from 'next/head'
 import Image from 'next/image'
+import RecipeCard from '../components/RecipeCard'
 import styles from '../styles/Home.module.css'
 
 export const getStaticProps = async() => {
@@ -31,10 +32,10 @@ export default function Home({ recipes }) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h3 className={styles.title}>
           Welcome to the Recipe Den!
-        </h1>
-
+        </h3>
+        { recipes.map(recipe => <RecipeCard key={recipe.sys.id} recipe={recipe} />) }
         
       </main>
 
