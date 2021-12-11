@@ -19,17 +19,16 @@ export const getStaticPaths = async () => {
     }
 }
 
-export const getStaticProps = async(context) => {
-    const { params } = context;
+export const getStaticProps = async({ params }) => {
 
-    const response = await client.getEntries({
+    const { items } = await client.getEntries({
         content_type: "recipe",
         "fields.slug": params.slug
     });
 
     return {
         props: {
-            recipe: response.items
+            recipe: items[0]
         }
     }
 }
