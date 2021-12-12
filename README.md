@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Also used the [rich-text-react-renderer](https://www.npmjs.com/package/@contentful/rich-text-react-renderer) for the method (which is in rich text format) retrieved from contentful.
 
+[Incremental Static Regeneration](https://vercel.com/docs/concepts/next.js/incremental-static-regeneration) employed on the Homepage and Recipe Details page using the revalidate property on the getStaticProps.
+
 ## Deployed on Vercel
 
 Visit the deployed site at [here](https://recipe-den.vercel.app/)!
