@@ -47,6 +47,12 @@ export default function Home({ recipes }) {
           grid-template-columns: 1fr 1fr;
           grid-gap: 20px 60px;
         }
+
+        @media screen and (max-width: 600px){
+          .recipe-list {
+            grid-template-columns: 1fr;
+          }
+        }
       `}</style>
     </div>
   )
