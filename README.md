@@ -2,6 +2,8 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) that also uses [Contentful](https://www.contentful.com/).
 
+Also used the [rich-text-react-renderer](https://www.npmjs.com/package/@contentful/rich-text-react-renderer) for the method (which is in rich text format) retrieved from contentful.
+
 ## Styling 
 
 For styling made use of the Styled JSX pattern i.e. using the `<style jsx>{``.....``}</style>` syntax
