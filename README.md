@@ -6,7 +6,9 @@ Also used the [rich-text-react-renderer](https://www.npmjs.com/package/@contentf
 
 [Incremental Static Regeneration](https://vercel.com/docs/concepts/next.js/incremental-static-regeneration) employed on the Homepage and Recipe Details page using the revalidate property on the getStaticProps.
 
-Fallback pages also added for new content that is added on Contentful, i.e. a new recipe - so that user does not get the default 404 page when attempting to visit the recipe detail page of a newly added recipe!
+[Fallback](https://nextjs.org/docs/basic-features/data-fetching#fallback-true) pages also added for new content that is added on Contentful, i.e. a new recipe - so that user does not get the default 404 page when attempting to visit the recipe detail page of a newly added recipe!
+
+Custom 404 page also added (very easy on Next.js!) - used a 404 illustration from this [brilliant website](https://www.kapwing.com/404-illustrations?ref=producthunt).
 
 ## Deployed on Vercel
 
